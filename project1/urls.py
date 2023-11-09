@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from HelloWorldApp.views import macha
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('macha',macha,name='macha')
 ]
